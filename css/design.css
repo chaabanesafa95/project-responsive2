@@ -1,0 +1,288 @@
+/*Style Global*/
+
+body {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.6;
+
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+
+  color: #fff;
+
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  background-color: rgb(218, 173, 180);
+  border-radius: 9px;
+  width: 30%;
+  height: 30%;
+}
+
+/* Section héro */
+
+.hero {
+  text-align: center;
+
+  background: url("images/pexels-karolina-grabowska-4041200.jpg"); /*backround image*/
+
+  color: #fff;
+
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 19px;
+
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  background: rgb(231, 147, 160);
+
+  color: #fff;
+
+  padding: 10px 20px;
+
+  text-decoration: none;
+
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background: #fff;
+  color: rgb(231, 147, 160);
+  transition: 0.3s;
+}
+
+/*Section Product*/
+.products {
+  padding: 20px;
+
+  background-color: #fff;
+
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 20px;
+
+  font-size: 32px;
+}
+
+.product-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 20px;
+
+  justify-content: center;
+}
+
+.product-card {
+  background: #fff;
+
+  border: 1px solid #ddd;
+
+  border-radius: 5px;
+
+  padding: 15px;
+
+  width: 300px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+
+  border-radius: 5px;
+
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 19px;
+
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+.product-card .btn {
+  background: rgb(231, 147, 160);
+
+  color: white;
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.product-card .btn:hover {
+  background: rgb(231, 147, 160);
+}
+
+/*Pied de la page*/
+footer {
+  background: #f7e1e1;
+  color: #fff;
+
+  text-align: center;
+
+  padding: 10px 0;
+  height: 10%;
+}
+.reseau-sociaux {
+  color: #333;
+  font-size: 16px;
+}
+.reseau-sociaux a {
+  text-align: center;
+  color: rgb(231, 147, 160);
+  font-weight: bolder;
+  font-size: 16px;
+}
+.reseau-sociaux p {
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Large devices (desktops, 992px and up)  */
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .product-card {
+    width: 20%;
+  }
+  .product-card p {
+    font-size: 12px;
+  
+}
+
+/* Medium devices (tablets, 768px and up)  */
+
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 10px;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .products h2 {
+    font-size: px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up)  */
+
+@media (max-width: 768px) {
+    .nav-links {
+        padding: 20px;}
+  .navbar {
+    flex-direction: column;
+
+    gap: 10px;
+  }
+  .hero {
+    padding: 60px 10px;
+  }
+  .hero h1 {
+    font-size: 29px;
+  }
+  .product-card {
+    width: 100%;
+  }
+  .product-card h3 {
+    font-size: 16px;
+  }
+}
+/*  Extra small devices: max-width 576px */
+
+@media (max-width: 576px) {
+  .nav-links {
+    padding: 20px;
+  }
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero p {
+    font-size: 14.5px;
+  }
+
+  .product-card p {
+    font-size: 13.5px;
+  }
+  footer {
+    font-size: 12px;
+  }
+}
